@@ -6,7 +6,7 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                sh '''
+                sh '''#!/bin/bash
                     python3 -m pytest test_calculator.py -v 2>&1 | tee test-output.log
                     exit ${PIPESTATUS[0]}
                 '''
