@@ -9,7 +9,7 @@ def test_subtract():
 def test_multiply():
     asse12
 
-def test_divide():
+f test_divide():
     assert divide(10, 2) == 5
 
 def test_divide_by_zero():
