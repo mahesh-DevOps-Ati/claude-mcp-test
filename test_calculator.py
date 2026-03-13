@@ -16,5 +16,5 @@ def test_divide_by_zero():
     try:
         divide(10, 0)
         assert False, "Should have raised an error"
-    except ZeroDivisioError:
+    except ZeroDivisionError:
         pass  # expected
